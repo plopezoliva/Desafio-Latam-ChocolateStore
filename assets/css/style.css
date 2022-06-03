@@ -1,0 +1,199 @@
+html, body{
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+}
+
+/* diseño mobile */
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:repeat(4, max-content) ;
+    grid-template-areas:
+    "menu"
+    "busqueda"
+    "sección-principal"
+    "pie-página";
+    height: 100%;
+
+}
+nav{
+    grid-area: menu;
+    background: white;
+    padding: 10px;
+    color: #5d4037;
+    
+    
+}
+.navbar-lateral{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.container-nav-left-right{
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.foto-logo{
+    width: 100px;
+
+}
+.container-iconos{
+    display: flex;
+    justify-content:right ;
+    align-items: center; 
+    padding:0px; 
+
+} 
+.icons{
+    
+    padding: 0px 10px;
+}
+@media (max-width:992px){
+    .navbar-inicio{
+        display: none;
+    }
+}
+
+/* filtro de busqueda */
+.busqueda{
+    grid-area: busqueda;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.busqueda-container{
+    padding: 10px 0px;
+}
+.busqueda-input{
+    width: 80%;
+    height: 20px;
+}
+
+.busqueda-p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* card */
+
+main{
+    grid-area: sección-principal;
+    background: whitesmoke;
+    /* /* padding: 10px;
+    color: white; 
+    display: flex;
+    flex-wrap: wrap; */
+}
+
+.card-container{
+    background: gainsboro;
+    width: 80%;
+    margin: 0 auto;
+    border: 2px solid red;
+
+}
+.card-body{
+    border: 2px solid green;
+    width: 30%;
+    margin: 0 auto;
+    
+}
+.card-articulo{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.card-texto{
+    
+    text-align: center;
+}
+.card-boton{
+    padding: 10px;
+    background:orange;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.card-img{
+    width: 200px;
+    margin-top: 10px;
+}
+footer{
+    grid-area: pie-página;
+    background: chartreuse;
+    padding: 10px;
+    color: white;
+}
+
+
+/* version desktop */
+
+@media (min-width: 992px) {
+    .grid-container{
+    grid-template-areas:
+    "menu busqueda"
+    "menu sección-principal"
+    "pie-página sección-principal";
+    grid-template-columns: 1fr 11fr;
+    }
+.navbar-right{
+    display: none;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 19em;
+    margin: 10px;
+    padding: 20px;
+    background-color: white;
+}
+.card-container{
+    background: white;
+    width: 90%;
+    margin: 0 auto;
+    border: 2px solid red;
+    justify-content: center;
+}
+
+ /*
+.card-articulo{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.card-texto{
+    
+    text-align: center;
+}
+.card-boton{
+    padding: 10px;
+    background:yellowgreen;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.card-img{
+    width: 200px;
+    margin-top: 10px;
+} */
+    }
