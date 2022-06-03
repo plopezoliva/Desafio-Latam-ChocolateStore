@@ -136,8 +136,21 @@ footer{
     padding: 10px;
     color: white;
 }
-
-
+.footer-iconos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+.footer-iconos-redes{
+    margin-right: 10px;
+}
+.footer-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
 /* version desktop */
 
 @media (min-width: 992px) {
