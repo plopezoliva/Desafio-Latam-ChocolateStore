@@ -23,8 +23,17 @@ nav{
     background: white;
     padding: 10px;
     color: #5d4037;
+    width: 200px;
     
     
+}
+.navbar-inicio{
+    padding-left: 25px;
+    padding-top: 80px;
+}
+li{
+    padding-top: 10px;
+    list-style-type: none;
 }
 .navbar-lateral{
     width: 90%;
@@ -43,6 +52,8 @@ nav{
 
 .foto-logo{
     width: 100px;
+    padding-left: 30px ;
+
 
 }
 .container-iconos{
@@ -54,7 +65,7 @@ nav{
 } 
 .icons{
     
-    padding: 0px 10px;
+    padding: 0px 700px;
 }
 @media (max-width:992px){
     .navbar-inicio{
@@ -98,16 +109,18 @@ main{
 }
 
 .card-container{
-    background: gainsboro;
+    background: whitesmoke;
     width: 80%;
     margin: 0 auto;
-    border: 2px solid red;
+    border: 2px ;
 
 }
 .card-body{
-    border: 2px solid green;
+    border: 2px ;
     width: 30%;
     margin: 0 auto;
+    background-color: white;
+    color: #5d4037;
     
 }
 .card-articulo{
@@ -132,7 +145,7 @@ main{
 }
 footer{
     grid-area: pie-página;
-    background: chartreuse;
+    background: #5d4037;
     padding: 10px;
     color: white;
 }
@@ -179,10 +192,10 @@ footer{
     background-color: white;
 }
 .card-container{
-    background: white;
+    background: whitesmoke;
     width: 90%;
     margin: 0 auto;
-    border: 2px solid red;
+    border: 2px ;
     justify-content: center;
 }
 
