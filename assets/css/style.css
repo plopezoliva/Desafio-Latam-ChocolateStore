@@ -164,6 +164,16 @@ footer{
     justify-content: center;
     color: #fff;
 }
+.page-navigation{
+    width: 100%;
+}
+.pagination{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
 /* version desktop */
 
 @media (min-width: 992px) {
